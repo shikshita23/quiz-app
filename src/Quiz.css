@@ -1,0 +1,42 @@
+.Heading{
+    width: 490px;
+    height: 50px;
+    font-size: 50px;
+    margin: auto;
+    margin-top: 100px;
+}
+.quizBoard{
+    width: 690px;
+    height: 400px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 150px;
+    padding-left: 50px;
+    padding-top: 50px;
+    box-shadow: 28px -28px 17px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.questionSection{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.answerSection{
+    font-size: 27px;
+}
+label{
+    display: flex;
+    margin-bottom: 20px;
+}
+.nextButton{
+    width: 80px;
+    height: 35px;
+    border-radius: 7px;
+    margin-left: 250px;
+    border: none;
+    margin-top: 20px;
+}
