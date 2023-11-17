@@ -32,7 +32,7 @@ const questions=[
     {
         qn:"Who was the first Nepalese literature who was born and died on the same date?",
         options:["Bhanubhakta Acharya","Moti Ram Bhatta","Bp Koirala","Laxmi Prasad Devkota"],
-        answer:3
+        answer:2
     },
 ];
 export default questions;
