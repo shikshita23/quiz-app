@@ -10,12 +10,12 @@ const questions=[
         answer:1
     },
     {
-        qn:" How many currents are there in the Sugauli Treaty",
+        qn:" How many currents are there in the Sugauli Treaty?",
         options:["8","9 ","11","12"],
         answer:2
     },
     {
-        qn:"Which is the capital city of Gopal Dynasty",
+        qn:"Which is the capital city of Gopal Dynasty?",
         options:["Matatirtha","Changunarayan","Patan","Lalitpur"],
         answer:1
     },
@@ -30,7 +30,7 @@ const questions=[
         answer:3
     },
     {
-        qn:"Who was the first Nepalese literature who was born and died on the same date?",
+        qn:"Who was the Nepalese literature who was born and died on the same date?",
         options:["Bhanubhakta Acharya","Moti Ram Bhatta","Bp Koirala","Laxmi Prasad Devkota"],
         answer:2
     },
