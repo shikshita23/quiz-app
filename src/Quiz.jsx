@@ -27,7 +27,7 @@ function Quiz(){
             setScore(score+1);
         }
     }
-    const func =(i) =>{
+    const func=(i) =>{
         setClickedOption(i+1)
     }
     return(
