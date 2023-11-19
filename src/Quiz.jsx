@@ -6,27 +6,22 @@ function Quiz(){
     const[question,setQuestion]=useState(0)
     const [showResult,setShowResult]=useState(false);
     const [clickedOption,setClickedOption]=useState(0);
+    const[score,setScore]=useState(0);
     const nextQuestion=() =>{
         checkScore();
         if(question<questions.length-1){
-            clearRadio();
             setQuestion(question+1)
-            setClickedOption(0);
+            setClickedOption(null);
         }
         else{
             setShowResult(true)
         }
-    }
-    function clearRadio(){
-        let radio = document.getElementById("radio_btn");
-        radio.checked = false;
-    }
-    const[score,setScore]=useState(0)
+    }    
     const checkScore=()=>{
-        if(clickedOption===questions[question].answer){
+        if(clickedOption===questions[question].answer&&clickedOption !== null){
             setScore(score+1);
         }
-    }
+    };
     const func=(i) =>{
         setClickedOption(i+1)
     }
@@ -45,7 +40,7 @@ function Quiz(){
                     {questions[question].options.map((option,i )=> {
                         return(
                             <>
-                             <label> <input id="radio_btn" className="options" type='radio' value={option} name='options' key={i} onChange={()=>func(i)}/>{option}</label>  
+                             <label> <input  className="options" type='radio' value={option} name='options' key={i} checked={clickedOption === i + 1} onChange={()=>func(i)}/>{option}</label>  
                             </>
                         )
                     })}
