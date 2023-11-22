@@ -27,7 +27,7 @@ function Quiz() {
         setClickedOption(i + 1) 
     }
     const isOptionChecked = (index) => {
-        const clickedOptionValue = clickedOption === index + 1;  
+        const clickedOptionValue = clickedOption === index + 1; 
         console.log(clickedOptionValue);
         return clickedOptionValue;
     }
@@ -57,7 +57,6 @@ function Quiz() {
                                                 checked={isOptionChecked(index)} 
                                                 onChange={() => questionValues(index)} 
                                             />
-                                            {index}
                                             {option}
                                         </label>
                                     </>
