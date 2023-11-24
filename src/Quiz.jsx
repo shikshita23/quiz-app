@@ -3,10 +3,11 @@ import axios from "axios";
 import "./Quiz.css";
 //import Second from './result';
 function Quiz() {
-  const [question, setQuestion] = useState([]);
-  const [showResult, setShowResult] = useState(false);
-  const [clickedOption, setClickedOption] = useState(0);
-  const [score, setScore] = useState(0);
+  const [questions, setQuestions] = useState([]);
+  const [questionidx, setQuestionsIdx] = useState(0);
+  // const [showResult, setShowResult] = useState(false);
+  // const [clickedOption, setClickedOption] = useState(0);
+  // const [score, setScore] = useState(0);
 
   useEffect(() => {
     const fetchQuestions = async () => {
@@ -15,8 +16,8 @@ function Quiz() {
           "https://opentdb.com/api.php?amount=50&category=9&difficulty=easy&type=multiple"
         );
         const data = response.data;
-        console.log("data api bata aako ~~~~~~~~>",data);
-        setQuestion(data.results);
+        console.log("data api bata aako ~~~~~~~~~~>", data);
+        setQuestions(data.results);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -31,20 +32,16 @@ function Quiz() {
     }
     return array;
   }
-
-  console.log("questions -->", question);
   const nextQuestion = () => {
-      //checkScore();
-      if (question < question.length - 1) {
-          setQuestion(question + 1)
-          setClickedOption(null);
-      }
-      else {
-          setShowResult(true)
-      }
-  }
-
-  
+    //checkScore();
+    setQuestionsIdx(questionidx+1)
+    if (questionidx < 5) {
+      setQuestions(questions + 1);
+      setClickedOption(null);
+    } else {
+      setShowResult(true);
+    }
+  };
   // const checkScore = () => {
   //     if (clickedOption == question[questions].answer && clickedOption !== null) {
   //         setScore(score + 1);
@@ -59,54 +56,47 @@ function Quiz() {
   //     return clickedOptionValue;
   // }
 
-
   return (
     <div>
-      <h1>Hello world</h1>
-      <div>
         <div>
-          <h1>Trivia Questions</h1>
-          
-          {question.map((question, index) => (
+          <div className="Heading">Quiz</div>
+          {questions.map((questions, index) => (
             <div key={index}>
               <div className="questionSection">
-                   <p>{question.question}</p>
-                 </div>
-              
-              
-
-            <div className="answerSection">
-              {
-              shuffleArray([
-                
-              ...question.incorrect_answers,
-                question.correct_answer// Include correct answer in the options array
-              ]).map((answer, idx) => {
-                return (
-                  <label key={idx}>
-                    <input
-                      className="options"
-                      type='radio'
-                      value={answer}
-                      name='options'
-                      // Consider changing key={idx} to a unique identifier if possible
-                      // checked={isOptionChecked(index)}
-                      // onChange={() => questionValues(index)}
-                    />
-                    {answer}
-                  </label>
-                );
-              })}
-</div>
-              
-                    <div className='nextSection'>
-                        <button className='nextButton' onClick={nextQuestion}>Next</button>
-                     </div>
+                <p>{questions.question}</p>
+              </div>
+              <div className="answerSection">
+                {shuffleArray([
+                  ...questions.incorrect_answers,
+                  questions.correct_answer,
+                ]).map((answer, idx) => {
+                  return (
+                    <label key={idx}>
+                      <input
+                        className="options"
+                        type="radio"
+                        value={answer}
+                        name="options"
+                        // Consider changing key={idx} to a unique identifier if possible
+                        // checked={isOptionChecked(index)}
+                        // onChange={() => questionValues(index)}
+                      />
+                      {answer}
+                    </label>
+                  );
+                })}
+              </div>
+              <div className="nextSection">
+                <button className="nextButton" onClick={nextQuestion}>
+                  Next
+                </button>
+              </div>
             </div>
           ))}
         </div>
-      </div>
     </div>
+
+    
     // <div>
     //     <div className="Heading">Quiz</div>
     //     <div className="quizBoard">

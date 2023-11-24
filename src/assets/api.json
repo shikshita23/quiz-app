@@ -51,7 +51,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "What is the French word for &quot;hat&quot;?",
+        "question": "What is the French word for hat",
         "correct_answer": "Chapeau",
         "incorrect_answers": [
             "Bonnet",
@@ -87,7 +87,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "What is on display in the Madame Tussaud&#039;s museum in London?",
+        "question": "What is on display in the Madame Tussauds museum in London?",
         "correct_answer": "Wax sculptures",
         "incorrect_answers": [
             "Designer clothing",
@@ -159,7 +159,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "What is the profession of Elon Musk&#039;s mom, Maye Musk?",
+        "question": "What is the profession of Elon Musk's mom, Maye Musk?",
         "correct_answer": "Model",
         "incorrect_answers": [
             "Professor",
@@ -195,7 +195,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "According to Sherlock Holmes, &quot;If you eliminate the impossible, whatever remains, however improbable, must be the...&quot;",
+        "question": "According to Sherlock Holmes,If you eliminate the impossible, whatever remains, however improbable, must be the...",
         "correct_answer": "Truth",
         "incorrect_answers": [
             "Answer",
@@ -208,7 +208,7 @@
         "difficulty": "easy",
         "category": "General Knowledge",
         "question": "How would one say goodbye in Spanish?",
-        "correct_answer": "Adi&oacute;s",
+        "correct_answer": "Adios",
         "incorrect_answers": [
             " Hola",
             "Au Revoir",
@@ -234,7 +234,7 @@
         "question": "Which candy is NOT made by Mars?",
         "correct_answer": "Almond Joy",
         "incorrect_answers": [
-            "M&amp;M&#039;s",
+            "M&M",
             "Twix",
             "Snickers"
         ]
@@ -243,7 +243,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "When one is &quot;envious&quot;, they are said to be what color?",
+        "question": "When one is envious, they are said to be what color?",
         "correct_answer": "Green",
         "incorrect_answers": [
             "Red",
@@ -363,7 +363,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "What is the closest planet to our solar system&#039;s sun?",
+        "question": "What is the closest planet to our solar systems sun?",
         "correct_answer": "Mercury",
         "incorrect_answers": [
             "Mars",
@@ -375,7 +375,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "What is the name of NASA&rsquo;s most famous space telescope?",
+        "question": "What is the name of NASA's most famous space telescope?",
         "correct_answer": "Hubble Space Telescope",
         "incorrect_answers": [
             "Big Eye",
@@ -498,7 +498,7 @@
         "question": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
         "correct_answer": "Spruce Goose",
         "incorrect_answers": [
-            "Noah&#039;s Ark",
+            "Noahs Ark",
             "Fat Man",
             "Trojan Horse"
         ]
@@ -555,7 +555,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "What is the Spanish word for &quot;donkey&quot;?",
+        "question": "What is the Spanish word for donkey?",
         "correct_answer": "Burro",
         "incorrect_answers": [
             "Caballo",
