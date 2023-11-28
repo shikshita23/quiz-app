@@ -42,7 +42,7 @@ function Quiz() {
     checkScore();
     setQuestionsIdx(questionIdx + 1);
     setClickedOption(null);
-    if (questionIdx == 4) {
+    if (questionIdx == 9) {
       setShowResult(true);
     }
   };
@@ -79,7 +79,7 @@ function Quiz() {
   return (
     <div>
       <div className="Heading">Quiz</div>
-      {questions.length > 0 && questionIdx < 6 && (
+      {questions.length > 0 && questionIdx <11 && (
         <div className="quizBoard">
           {showResult ? (
             <Second score={score} totalScore={questions.length} />
