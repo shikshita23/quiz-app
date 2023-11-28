@@ -7,15 +7,14 @@
 }
 .quizBoard{
     width: 1150px;
-    height: 400px;
+    height: 489px;
     font-size: 20px;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-bottom: 50px;
     box-shadow: 20px -20px 10px rgba(0,0,0,0.1);
     border-radius: 20px;
     background-color: #d3d3d3;
-    padding-bottom: 30px;
 }
 .options{
     display: flex;
@@ -23,17 +22,17 @@
     margin-right: 15px;
 }
 .questionSection{
-    font-size: 35px;
+    height: 75px;
+    font-size: 30px;
     background-color: #F28C28;
     padding-left: 45px;
-    padding-top: 30px;
+    padding-top: 35px;
     padding-bottom: 30px;   
     border-radius: 20px 20px 0px 0px; 
     padding-right: 20px;
 }
 .answerSection{
-    font-size: 27px;
-    background-color:#353935;
+    font-size: 22px;
     color: whitesmoke;
     padding-left: 50px;
     padding-top: 50px;
@@ -50,12 +49,16 @@ label{
     border: none;
     margin-left: 510px;
     background-color: #F28C28;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .nextSection{
-    background-color:#353935;
+    
     height: 55px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+.bottomPart{
+    background-color:#353935;
     border-radius: 0px 0px 20px 20px;
-    padding-bottom: 30px;
 }
