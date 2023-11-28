@@ -13,7 +13,7 @@ function Quiz() {
     const fetchQuestions = async () => {
       try {
         const response = await axios.get(
-          "https://opentdb.com/api.php?amount=5&category=9&difficulty=easy&type=multiple"
+          "https://opentdb.com/api.php?amount=30&category=9&difficulty=easy&type=multiple"
         );
         const data = response?.data;
         console.log("data --->", data);
@@ -42,7 +42,7 @@ function Quiz() {
     checkScore();
     setQuestionsIdx(questionIdx + 1);
     setClickedOption(null);
-    if (questionIdx == 4) {
+    if (questionIdx == 9) {
       setShowResult(true);
     }
   };
@@ -79,10 +79,10 @@ function Quiz() {
   return (
     <div>
       <div className="Heading">Quiz</div>
-      {questions.length > 0 && questionIdx < 6 && (
+      {questions.length > 0 && questionIdx < 11 && (
         <div className="quizBoard">
           {showResult ? (
-            <Second score={score} totalScore={questions.length} />
+            <Second score={score} totalScore={questionIdx} />
           ) : (
             <>
               <div className="questionSection">
