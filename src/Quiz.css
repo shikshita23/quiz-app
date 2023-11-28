@@ -6,8 +6,8 @@
     margin-top: 50px;
 }
 .quizBoard{
-    width: 1150px;
-    height: 489px;
+    width: 1095px;
+    height: 453px;
     font-size: 20px;
     margin: auto;
     margin-top: 50px;
@@ -22,7 +22,7 @@
     margin-right: 15px;
 }
 .questionSection{
-    height: 75px;
+    height: 65px;
     font-size: 30px;
     background-color: #F28C28;
     padding-left: 45px;
@@ -53,10 +53,7 @@ label{
 
 }
 .nextSection{
-    
-    height: 55px;
-    padding-bottom: 25px;
-    padding-top: 15px;
+    padding-bottom: 20px;
 }
 .bottomPart{
     background-color:#353935;
